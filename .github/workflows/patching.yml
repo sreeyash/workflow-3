@@ -28,7 +28,7 @@ jobs:
           aws-region: "us-east-1"
           role-session-name: ${{ github.run_id }}
           role-duration-seconds: "900"
-          mask-aws-account-id: "true"
+          # mask-aws-account-id: "true"
       - name: Verify Initial OIDC Identity
         run: |
           echo "=== Initial OIDC Identity (Verified) ==="
